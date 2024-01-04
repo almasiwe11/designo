@@ -1,7 +1,11 @@
 import Navigation from "./Navigation"
 
 function Header() {
-  return <Navigation dark />
+  return (
+    <header className="">
+      <Navigation dark mobileMenu />
+    </header>
+  )
 }
 
 export default Header

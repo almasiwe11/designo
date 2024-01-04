@@ -1,5 +1,11 @@
+import Award from "../Components/Award"
+
 const Home = () => {
-  return <div>Home</div>
+  return (
+    <div>
+      <Award />
+    </div>
+  )
 }
 
 export default Home
