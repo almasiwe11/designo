@@ -15,13 +15,15 @@ const Navigation = ({ dark = false, mobileMenu = false }: Props) => {
   return (
     <div className="relative">
       <div
-        className={`h-20 flex-center relative z-50 ${
+        className={`${dark ? "h-20" : "md:h-20 "} flex-center relative z-50 ${
           dark ? "bg-white" : "bg-transparent"
         }`}
       >
         <div
           className={`wrapper flex ${
-            dark ? "justify-between items-center" : "flex-col"
+            dark
+              ? "justify-between items-center"
+              : "flex-col md:flex-row md:justify-between md:items-center"
           }  `}
         >
           <div className={`${!dark && "flex-center md:inline-block"}`}>
