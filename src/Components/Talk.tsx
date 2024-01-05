@@ -4,7 +4,7 @@ import Whiteheading from "./Whiteheading"
 
 function Talk() {
   return (
-    <section className="relative h-56 mt-24">
+    <section className="relative h-56 mt-32">
       <div className="wrapper absolute inset-0">
         <div className="lg:h-[300px] py-12 lg:py-0 relative overflow-hidden bg-peach rounded-lg flex flex-col lg:flex-row items-center gap-7 px-20 justify-between">
           <div className="absolute right-0">

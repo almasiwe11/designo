@@ -8,6 +8,7 @@ import builder from "/web-design/desktop/image-builder.jpg"
 import camp from "/web-design/desktop/image-camp.jpg"
 import photon from "/web-design/desktop/image-express.jpg"
 import transfer from "/web-design/desktop/image-transfer.jpg"
+import Design from "../Components/Design"
 
 const Webdesign = () => {
   const webGallery: GalleryItem[] = [
@@ -70,6 +71,7 @@ and bring memorable brand experiences."
           />
         ))}
       </Gallery>
+      <Design out="web" />
     </div>
   )
 }
