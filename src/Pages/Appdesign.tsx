@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import Design from "../Components/Design"
 import Designheader from "../Components/Designheader"
 import Gallery from "../Components/Gallery"
@@ -46,6 +47,11 @@ const Appdesign = () => {
       subtitle: "A VR experience app made for Loopstudios",
     },
   ]
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className="">
       <Designheader

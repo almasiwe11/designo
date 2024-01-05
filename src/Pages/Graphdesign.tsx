@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import Design from "../Components/Design"
 import Designheader from "../Components/Designheader"
 import Gallery from "../Components/Gallery"
@@ -26,6 +27,10 @@ export const Graphdesign = () => {
       subtitle: "A poster made in collaboration with the Federal Art Project",
     },
   ]
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <div>

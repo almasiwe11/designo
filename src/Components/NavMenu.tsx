@@ -17,7 +17,11 @@ function NavMenu({ liStyle, ulStyle }: PropTypes): JSX.Element {
   return (
     <ul className={`${ulStyle} uppercase`}>
       {list.map((linkName) => (
-        <Link to={linkName.path} key={linkName.name} className={`${liStyle}`}>
+        <Link
+          to={linkName.path}
+          key={linkName.name}
+          className={`${liStyle} relative after:absolute after:bottom-1 after:left-0 after:w-full hover:after:border-b hover:after:border-gray-dark`}
+        >
           {linkName.name}
         </Link>
       ))}

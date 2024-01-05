@@ -9,6 +9,7 @@ import camp from "/web-design/desktop/image-camp.jpg"
 import photon from "/web-design/desktop/image-express.jpg"
 import transfer from "/web-design/desktop/image-transfer.jpg"
 import Design from "../Components/Design"
+import { useEffect } from "react"
 
 const Webdesign = () => {
   const webGallery: GalleryItem[] = [
@@ -53,6 +54,11 @@ const Webdesign = () => {
         "Site for low-cost money transfers and sending money within seconds",
     },
   ]
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className="">
       <Designheader

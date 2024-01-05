@@ -1,3 +1,9 @@
+import Contactform from "../Components/Contactform"
+
 export const Contact = () => {
-  return <div>Contact</div>
+  return (
+    <div className="wrapper">
+      <Contactform />
+    </div>
+  )
 }
