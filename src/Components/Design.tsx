@@ -26,7 +26,7 @@ const Design = () => {
               style="rounded-lg "
             />
             <div className="flex-center flex-col gap-4 absolute inset-0 z-20">
-              <Whiteheading style="uppercase text-3xl">web design</Whiteheading>
+              <Whiteheading style="uppercase">web design</Whiteheading>
               <div className="text-gray-light flex gap-3 items-center uppercase tracking-widest">
                 <span>View projects</span>
                 <RightArr />
@@ -44,7 +44,7 @@ const Design = () => {
               style="rounded-lg"
             />
             <div className="flex-center flex-col gap-4 absolute inset-0 z-20">
-              <Whiteheading style="uppercase text-3xl">web design</Whiteheading>
+              <Whiteheading style="uppercase">web design</Whiteheading>
               <div className="text-gray-light flex gap-3 items-center uppercase tracking-widest">
                 <span>View projects</span>
                 <RightArr />
@@ -62,7 +62,7 @@ const Design = () => {
               style="rounded-lg"
             />
             <div className="flex-center flex-col gap-4 absolute inset-0 z-20">
-              <Whiteheading style="uppercase text-3xl">web design</Whiteheading>
+              <Whiteheading style="uppercase">web design</Whiteheading>
               <div className="text-gray-light flex gap-3 items-center uppercase tracking-widest">
                 <span>View projects</span>
                 <RightArr />

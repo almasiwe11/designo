@@ -8,7 +8,7 @@ const Award = () => {
     <section className="wrapper">
       <div className="flex flex-col lg:flex-row h-[160vw] sm:h-[140vw] md:h-[120vw] lg:h-[639px] bg-peach rounded-xl relative overflow-hidden px-6 lg:px-24 justify-between">
         <div className="flex flex-col items-center gap-5 lg:items-start mt-10 lg:mt-36">
-          <Whiteheading style="w-96 text-center lg:text-start text-3xl md:text-4xl">
+          <Whiteheading style="w-96 text-center lg:text-start ">
             Award-winning custom designs and digital branding solutions
           </Whiteheading>
           <p className="text-gray-light max-w-sm text-center lg:text-start">

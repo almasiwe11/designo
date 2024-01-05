@@ -12,7 +12,7 @@ function Talk() {
           </div>
 
           <div className="flex flex-col gap-6 items-center lg:items-start">
-            <Whiteheading style="text-3xl text-center lg:text-start ">
+            <Whiteheading style="text-center lg:text-start ">
               Let&rsquo;s talk about <br></br> your project
             </Whiteheading>
             <p className="text-white max-w-sm text-center lg:text-start">

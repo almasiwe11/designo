@@ -6,7 +6,11 @@ type Props = {
 }
 
 const Whiteheading = ({ children, style }: Props) => {
-  return <div className={`text-gray-light font-bold  ${style}`}>{children}</div>
+  return (
+    <div className={`text-gray-light font-bold text-3xl md:text-4xl ${style}`}>
+      {children}
+    </div>
+  )
 }
 
 export default Whiteheading
