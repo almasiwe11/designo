@@ -3,7 +3,7 @@ import Smi from "./Smi"
 
 function Footer() {
   return (
-    <div className="bg-black py-16">
+    <div className="bg-black py-16 pt-56 md:pt-32">
       <Navigation dark={false} />
       <div className="wrapper">
         <div className="border border-t-1 border-gray-dark hidden md:block"></div>

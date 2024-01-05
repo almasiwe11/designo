@@ -4,25 +4,27 @@ import Whiteheading from "./Whiteheading"
 
 function Talk() {
   return (
-    <div className="wrapper mt-32">
-      <div className="h-[300px] relative overflow-hidden bg-peach rounded-lg flex items-center px-20 justify-between">
-        <div className="absolute right-0">
-          <Cta />
-        </div>
+    <section className="relative h-56 mt-24">
+      <div className="wrapper absolute inset-0">
+        <div className="lg:h-[300px] py-12 lg:py-0 relative overflow-hidden bg-peach rounded-lg flex flex-col lg:flex-row items-center gap-7 px-20 justify-between">
+          <div className="absolute right-0">
+            <Cta />
+          </div>
 
-        <div className="flex flex-col gap-6">
-          <Whiteheading style="text-3xl ">
-            Let&rsquo;s talk about <br></br> your project
-          </Whiteheading>
-          <p className="text-white max-w-sm">
-            Ready to take it to the next level? Contact us today and find out
-            how our expertise can help your business grow.
-          </p>
-        </div>
+          <div className="flex flex-col gap-6 items-center lg:items-start">
+            <Whiteheading style="text-3xl text-center lg:text-start ">
+              Let&rsquo;s talk about <br></br> your project
+            </Whiteheading>
+            <p className="text-white max-w-sm text-center lg:text-start">
+              Ready to take it to the next level? Contact us today and find out
+              how our expertise can help your business grow.
+            </p>
+          </div>
 
-        <Button style="z-20" text="Get in touch" />
+          <Button style="z-20" text="Get in touch" />
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
 

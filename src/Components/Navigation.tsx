@@ -4,6 +4,7 @@ import Hamburger from "./Hamburger"
 import NavMenu from "./NavMenu"
 import Logo from "/shared/desktop/logo-dark.png"
 import Logolight from "/shared/desktop/logo-light.png"
+import { Link } from "react-router-dom"
 
 type Props = {
   dark: boolean
@@ -27,7 +28,9 @@ const Navigation = ({ dark = false, mobileMenu = false }: Props) => {
           }  `}
         >
           <div className={`${!dark && "flex-center md:inline-block"}`}>
-            <img src={dark ? Logo : Logolight} alt="Logo" className="h-5" />
+            <Link to="/">
+              <img src={dark ? Logo : Logolight} alt="Logo" className="h-5" />
+            </Link>
           </div>
           <div>
             <div className={mobileMenu ? "hidden md:block" : "block"}>
