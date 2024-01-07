@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import Close from "./Close"
 import Hamburger from "./Hamburger"
 import NavMenu from "./NavMenu"
@@ -13,6 +13,34 @@ type Props = {
 
 const Navigation = ({ dark = false, mobileMenu = false }: Props) => {
   const [open, setOpen] = useState(false)
+  const menuRef = useRef<HTMLDivElement | null>(null)
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "auto"
+    }
+
+    return () => {
+      document.body.style.overflow = "auto"
+    }
+  }, [open])
+
+  useEffect(() => {
+    function handler(e: MouseEvent) {
+      if (!menuRef.current?.contains(e.target as Node)) {
+        setOpen(false)
+      }
+    }
+
+    document.addEventListener("mousedown", handler)
+
+    return () => {
+      document.removeEventListener("mousedown", handler)
+    }
+  }, [open, menuRef])
+
   return (
     <div className="relative">
       <div
@@ -58,8 +86,14 @@ const Navigation = ({ dark = false, mobileMenu = false }: Props) => {
         </div>
       </div>
       {mobileMenu && open && (
-        <div className="absolute top-full left-0 right-0  bg-black z-50">
-          <NavMenu ulStyle="flex flex-col gap-4 px-5 text-gray-light py-8 text-lg" />
+        <div
+          ref={menuRef}
+          className="absolute top-full left-0 right-0 bg-black z-50"
+        >
+          <NavMenu
+            onClick={() => setOpen(false)}
+            ulStyle="flex flex-col gap-4 px-5 text-gray-light py-8 text-lg"
+          />
         </div>
       )}
 

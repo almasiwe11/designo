@@ -1,11 +1,11 @@
 import Circle from "../Svg/Circle"
-import SmallCircle from "../Svg/SmallCircle"
+import Form from "./Form"
 import Whiteheading from "./Whiteheading"
 
 function Contactform() {
   return (
-    <div className="pg-peach p-10 relative h-[420px] overflow-hidden rounded-xl bg-peach">
-      <div className="absolute bottom-0 left-0">
+    <div className="pg-peach gap-8 lg:gap-0 mb-12 lg:px-16 px-5 py-8 lg:py-12 relative lg:h-[450px] overflow-hidden rounded-xl bg-peach flex flex-col lg:grid lg:grid-cols-2 items-center lg:items-start">
+      <div className="absolute bottom-0 left-0 -z-20">
         <Circle />
       </div>
 
@@ -19,7 +19,7 @@ function Contactform() {
         </p>
       </div>
 
-      <form action=""></form>
+      <Form />
     </div>
   )
 }

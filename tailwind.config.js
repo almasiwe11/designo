@@ -12,6 +12,7 @@ export default {
         black: "#1D1C1E",
         "gray-dark": " #333136",
         "gray-light": " #F1F3F5",
+        input: "#d1d5db",
       },
     },
     screens: {
